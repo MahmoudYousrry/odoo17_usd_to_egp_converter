@@ -1,0 +1,1 @@
+# odoo17_usd_to_egp_converter
