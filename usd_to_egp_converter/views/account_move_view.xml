@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_move_form_inherit_egp" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.total_egp</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='amount_residual']" position="after">
+                <field name="egp_total" readonly="1" string="EGY Total"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
